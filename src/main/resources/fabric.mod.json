@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "entityparticles",
+  "version": "${version}",
+  "name": "Entity Particles",
+  "description": "Utility library for rendering particles on entities",
+  "authors": [
+    "XBlos"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/entityparticles/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [],
+    "main": [
+      "net.xblos.entityparticles.EntityParticles"
+    ]
+  },
+  "mixins": [
+    "entityparticles.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.5",
+    "fabric": "*",
+    "minecraft": "1.17.1"
+  }
+}
