@@ -7,11 +7,13 @@ public class TextParticle extends Particle {
     private final String text;
     private final int color;
     private final int shrinkAge;
+    private final float size;
 
-    public TextParticle(Vec3d pos, int age, String text, int color) {
+    public TextParticle(Vec3d pos, int age, String text, int color, float size) {
         super(pos, age);
         this.text = text;
         this.color = color;
+        this.size = size;
         shrinkAge = (int) ((float) age * .8f);
     }
 
@@ -32,5 +34,9 @@ public class TextParticle extends Particle {
 
     public int getColor() {
         return color;
+    }
+
+    public float getSize() {
+        return size;
     }
 }

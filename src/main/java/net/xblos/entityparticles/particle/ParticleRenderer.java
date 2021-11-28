@@ -48,9 +48,9 @@ public class ParticleRenderer {
         matrixStack.translate(x, y, z);
         matrixStack.multiply(client.getEntityRenderDispatcher().getRotation());
 
-        var scale = .02f;
+        var size = particle.getSize();
         var textScale = particle.getScale();
-        matrixStack.scale(-scale, -scale, scale);
+        matrixStack.scale(-size, -size, size);
         matrixStack.scale(textScale, textScale, textScale);
 
         var textWidth = client.textRenderer.getWidth(particle.getText());

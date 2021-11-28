@@ -7,8 +7,8 @@ import net.xblos.entityparticles.EntityParticles;
 
 public class EntityTextParticle extends TextParticle {
 
-    public EntityTextParticle(Entity target, int age, String text, int color) {
-        super(calculatePos(target), age, text, color);
+    public EntityTextParticle(Entity target, int age, String text, int color, float size) {
+        super(calculatePos(target), age, text, color, size);
     }
 
     private static Vec3d calculatePos(Entity target) {
