@@ -4,8 +4,8 @@ import net.minecraft.util.math.Vec3d;
 
 public abstract class Particle {
 
-    protected Vec3d oldPos;
-    protected Vec3d pos;
+    public Vec3d oldPos;
+    public Vec3d pos;
     protected int ticks;
     protected int age;
 
